@@ -136,7 +136,7 @@ a {
     text-align: center;
     margin-bottom: 5.6rem;
 
-    & #content {
+    & #content-hero {
       margin-bottom: 3rem;
 
       & img {
@@ -186,6 +186,38 @@ a {
   }
 }
 
+/* section about */
+#about {
+  border: 1px solid blue;
+  padding-block: 5rem;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--surface-color);
+
+  & #content-about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & p#title {
+      color: var(--brand-color-primary);
+      text-transform: uppercase;
+      font: var(--fw-md) 0.875rem/1 var(--ff-sans);
+      letter-spacing: 8%;
+    }
+
+    & h1 {
+      font: var(--fw-bold) 3rem/1.4 var(--ff-sans);
+      letter-spacing: -4%;
+    }
+
+    & p {
+      font: 400 1rem/1.6 var(--ff-sans);
+      color: var(--text-color-secundary);
+    }
+  }
+}
+
 /* media */
 @media (max-width: 576px) {
   .container {
@@ -210,7 +242,7 @@ a {
   #hero {
     padding-top: 4rem;
 
-    & #content {
+    & #content-hero {
       & img {
         width: 12.8rem;
         height: 3.25rem;
@@ -235,6 +267,23 @@ a {
       & button {
         padding: 0.75rem 1.5rem;
       }
+    }
+  }
+
+  /* configurar a seção about para celulares */
+  #about {
+    height: 48.6rem;
+
+    & #img-about {
+      border: 1px solid orange;
+      position: relative;
+      top: -15rem;
+    }
+
+    & #content-about {
+      border: 1px solid red;
+      padding-block: 3rem;
+      margin-top: -17rem;
     }
   }
 }
