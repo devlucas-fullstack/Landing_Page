@@ -3,31 +3,42 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Zingen</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav id="navbar" class="flex flex-row">
-          <div id="logo">
-            <a href="#"><img src="assets/Logo.svg" alt="Zingen" /></a>
-          </div>
-          <div id="menu">
-            <a href="#">Conheça o app</a>
-            <a href="#">Funcionalidades</a>
-            <a href="#">Planos e Preços</a>
-            <button type="button">Baixar agora</button>
-          </div>
-        </nav>
-      </header>
-    </div>
+    <header class="container">
+      <nav id="navbar" class="flex flex-row">
+        <div id="logo">
+          <a href="#"><img src="assets/Logo.svg" alt="Zingen" /></a>
+        </div>
+        <div id="menu">
+          <a href="#">Conheça o app</a>
+          <a href="#">Funcionalidades</a>
+          <a href="#">Planos e Preços</a>
+          <button type="button">Baixar agora</button>
+        </div>
+      </nav>
+    </header>
+    <section id="hero">
+      <main class="container">
+        <div id="content">
+          <img src="assets/music-bars.svg" alt="Music bars" />
+          <h1>Quem canta seus males espanta</h1>
+          <p>Cantar nunca foi tão fácil</p>
+        </div>
+        <div id="btn">
+          <button type="button" id="primary-hero">Ver planos</button>
+          <button type="button" id="secundary-hero">Baixar agora</button>
+        </div>
+      </main>
+    </section>
   </body>
 </html>

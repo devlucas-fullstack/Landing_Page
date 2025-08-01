@@ -19,6 +19,11 @@
   --text-color-primary: #f4f4f5;
   --brand-color-primary: #f7b733;
   --brand-color-secundary: #fc4a1a;
+  --gradient: linear-gradient(
+    90deg,
+    var(--brand-color-secundary) 0%,
+    var(--brand-color-primary) 100%
+  );
 
   --ff-sans: "Inter", sans-serif;
 
@@ -93,11 +98,11 @@ a {
   border: 1px solid red;
   align-items: center;
 
-  #logo {
+  & #logo {
     margin-right: auto;
   }
 
-  #menu {
+  & #menu {
     display: flex;
     gap: 1.5rem;
     align-items: center;
@@ -106,7 +111,7 @@ a {
       color: var(--brand-color-primary);
     }
 
-    button[type="button"] {
+    & button[type="button"] {
       border-radius: 8px;
       padding: 0.75rem 1.5rem;
       background-color: var(--text-color-primary);
@@ -114,15 +119,122 @@ a {
       cursor: pointer;
 
       &:hover {
-        background-color: var(--brand-color-primary);
-        cursor: pointer;
+        background: var(--gradient);
       }
     }
   }
 }
 
-@media (max-width: 430px) {
-  #menu a {
-    display: none;
+/* section hero */
+#hero {
+  border: 1px solid green;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+  background: url(../assets/bg-hero-desktop.svg) no-repeat bottom center/contain;
+
+  & main {
+    text-align: center;
+    margin-bottom: 5.6rem;
+
+    & #content {
+      margin-bottom: 3rem;
+
+      & img {
+        margin-inline: auto;
+        margin-bottom: 1.5rem;
+      }
+
+      & h1 {
+        font: 800 4rem/1.2 var(--ff-sans);
+      }
+
+      & p {
+        margin-top: 1rem;
+        font: 500 2.5rem/1.4 var(--ff-sans);
+        color: var(--text-color-secundary);
+      }
+    }
+
+    & #btn {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      & #primary-hero {
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        border: 1px solid var(--text-color-primary);
+        cursor: pointer;
+
+        &:hover {
+          color: var(--brand-color-primary);
+        }
+      }
+
+      & #secundary-hero {
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        background-color: var(--text-color-primary);
+        color: var(--bg-color);
+        cursor: pointer;
+
+        &:hover {
+          background: var(--gradient);
+        }
+      }
+    }
+  }
+}
+
+/* media */
+@media (max-width: 576px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  /* configurar a navbar para celulares */
+  #navbar {
+    padding-block: 1rem;
+
+    #logo a img {
+      width: 5.25rem;
+      height: 2rem;
+    }
+
+    #menu a {
+      display: none;
+    }
+  }
+
+  /* configurar a seção hero para celulares */
+  #hero {
+    padding-top: 4rem;
+
+    & #content {
+      & img {
+        width: 12.8rem;
+        height: 3.25rem;
+        margin-bottom: 1rem;
+      }
+
+      & h1 {
+        margin-bottom: 0.5rem;
+        font: 800 2.5rem/1.2 var(--ff-sans);
+        letter-spacing: -4px;
+      }
+
+      & p {
+        font: var(--fw-md) 1.25rem/ 1.4 var(--ff-sans);
+      }
+    }
+
+    & #btn {
+      display: flex;
+      gap: 1rem;
+
+      & button {
+        padding: 0.75rem 1.5rem;
+      }
+    }
   }
 }
