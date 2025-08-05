@@ -666,6 +666,37 @@ a {
   }
 }
 
+/* footer */
+footer {
+  & #footer-primary {
+    padding-block: 5rem;
+    & div:last-child {
+      & ul {
+        & li:first-child {
+          font: var(--fw-md) 0.75rem/1 var(--ff-sans);
+          color: var(--brand-color-primary);
+          letter-spacing: 8%;
+          text-transform: uppercase;
+        }
+
+        & li {
+          color: var(--text-color-secundary);
+        }
+      }
+    }
+  }
+
+  & #footer-secundary {
+    margin-bottom: 2rem;
+
+    & div:last-child {
+      & p {
+        color: var(--text-color-secundary);
+      }
+    }
+  }
+}
+
 /* media */
 @media (max-width: 576px) {
   .container-sml {
@@ -896,6 +927,27 @@ a {
 
       & #img-download {
         display: none;
+      }
+    }
+  }
+
+  /* configurar a seção footer para celulares */
+  footer {
+    padding: 3rem 3rem 1.5rem 3rem;
+
+    & #footer-primary {
+      & #logo-footer {
+        margin-bottom: 3rem;
+      }
+    }
+
+    & #footer-secundary {
+      & div:first-child {
+        margin-bottom: 1.5rem;
+      }
+
+      & div:last-child {
+        color: var(--text-color-secundary);
       }
     }
   }
