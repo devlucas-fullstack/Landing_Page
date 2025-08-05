@@ -261,8 +261,10 @@ a {
       height: 25rem;
       gap: 2rem;
       overflow: hidden;
+      position: relative;
 
       & div:first-child {
+        max-width: 17rem;
         height: auto;
 
         & img {
@@ -280,12 +282,12 @@ a {
         }
       }
 
-      /* configurar a imagem */
-      & img#img-2 {
+      & div:nth-child(2) {
+        height: auto;
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
         max-width: 15rem;
-        height: 30.3rem;
-        position: relative;
-        top: -10rem;
       }
     }
 
@@ -327,17 +329,22 @@ a {
       border-radius: 1.5rem;
       height: 25rem;
       overflow: hidden;
+      position: relative;
 
-      & #img-features-secundary-1 {
-        width: 15rem;
-        height: 30.3rem;
-        position: relative;
-        bottom: 10.5rem;
-        border: 1px solid white;
+      & div:first-child {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        max-width: 15rem;
+
+        & #img-features-secundary-1 {
+          border: 1px solid white;
+        }
       }
 
       & div {
-        max-width: 16rem;
+        margin-left: auto;
+        max-width: 17rem;
         height: auto;
 
         & img {
@@ -364,6 +371,7 @@ a {
       border-radius: 1.5rem;
       height: 25rem;
       overflow: hidden;
+      position: relative;
 
       & div:first-child {
         max-width: 16rem;
@@ -385,11 +393,241 @@ a {
         }
       }
 
-      & #img-features-secundary-2 {
-        width: 15rem;
-        height: 30.3rem;
-        position: relative;
-        border: 1px solid white;
+      & div:last-child {
+        height: auto;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        max-width: 15rem;
+
+        & #img-features-secundary-2 {
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
+/* section pricing */
+#pricing {
+  padding-block: 5rem;
+
+  & #header-pricing {
+    & p {
+      font: var(--fw-md) 0.875rem/1 var(--ff-sans);
+      letter-spacing: 8%;
+      color: var(--brand-color-primary);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    & h2 {
+      font: var(--fw-bold) 3rem/1.2 var(--ff-sans);
+      letter-spacing: -4%;
+      color: var(--text-color-primary);
+      margin-bottom: 2rem;
+    }
+  }
+
+  & #table-pricing {
+    & #basic {
+      padding: 2rem;
+      background-color: var(--surface-color);
+      border: 1px solid var(--stroke-color);
+      border-radius: 1.5rem;
+      max-width: 24rem;
+      height: 30rem;
+
+      & h6 {
+        font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
+        letter-spacing: -4%;
+        color: var(--text-color-primary);
+        margin-bottom: 4px;
+      }
+
+      & p {
+        font: 400 1rem/1.6 var(--ff-sans);
+        color: var(--text-color-secundary);
+        margin-bottom: 1.5rem;
+      }
+
+      & h3 {
+        font: var(--fw-bold) 2.5rem/1.2 var(--ff-sans);
+        color: var(--text-color-primary);
+        letter-spacing: -4%;
+        margin-bottom: 1.5rem;
+      }
+
+      & button {
+        padding: 0.75rem 1.5rem;
+        border: 1px solid var(--text-color-primary);
+        border-radius: 0.5rem;
+        color: var(--text-color-primary);
+        font-weight: 1.5rem;
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &:hover {
+          color: var(--brand-color-primary);
+          border-color: var(--brand-color-primary);
+        }
+      }
+
+      & #line {
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      & ul {
+        & li {
+          margin-bottom: 1rem;
+
+          & span {
+            color: var(--text-color-secundary);
+          }
+        }
+      }
+    }
+
+    & #premium {
+      padding: 4.5rem 2rem 2rem 2rem;
+      background-color: var(--surface-color);
+      border: 1px solid var(--brand-color-primary);
+      border-radius: 1.5rem;
+      max-width: 24rem;
+      height: 35rem;
+      position: relative;
+
+      & div:first-child span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.75rem 2rem;
+        background-color: var(--brand-color-primary);
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 1.5rem;
+      }
+
+      & h6 {
+        font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
+        letter-spacing: -4%;
+        color: var(--text-color-primary);
+        margin-bottom: 4px;
+      }
+
+      & p {
+        font: 400 1rem/1.6 var(--ff-sans);
+        color: var(--text-color-secundary);
+        margin-bottom: 1.5rem;
+      }
+
+      & h3 {
+        font: var(--fw-bold) 2.5rem/1.2 var(--ff-sans);
+        color: var(--text-color-primary);
+        letter-spacing: -4%;
+        margin-bottom: 1.5rem;
+
+        & span {
+          color: var(--text-color-secundary);
+          font: 400 1rem/1.6 var(--ff-sans);
+        }
+      }
+
+      & button {
+        padding: 0.75rem 1.5rem;
+        background-color: var(--text-color-primary);
+        border-radius: 0.5rem;
+        color: var(--bg-color);
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &:hover {
+          background-color: var(--brand-color-primary);
+        }
+      }
+
+      & #line {
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      & ul {
+        & li {
+          margin-bottom: 1rem;
+
+          & span {
+            color: var(--text-color-secundary);
+          }
+        }
+      }
+    }
+
+    & #family {
+      padding: 2rem;
+      background-color: var(--surface-color);
+      border: 1px solid var(--stroke-color);
+      border-radius: 1.5rem;
+      max-width: 24rem;
+      height: 30rem;
+
+      & h6 {
+        font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
+        color: var(--text-color-primary);
+        letter-spacing: -4%;
+        margin-bottom: 4px;
+      }
+
+      & p {
+        font: 400 1rem/1.6 var(--ff-sans);
+        color: var(--text-color-secundary);
+        margin-bottom: 1.5rem;
+      }
+
+      & h3 {
+        font: var(--fw-bold) 2.5rem/1.2 var(--ff-sans);
+        color: var(--text-color-primary);
+        letter-spacing: -4%;
+        margin-bottom: 1.5rem;
+
+        & span {
+          font: 400 1rem/1.6 var(--ff-sans);
+          color: var(--text-color-secundary);
+        }
+      }
+
+      & button {
+        padding: 0.75rem 1.5rem;
+        border: 1px solid var(--text-color-primary);
+        border-radius: 0.5rem;
+        color: var(--text-color-primary);
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        &:hover {
+          color: var(--brand-color-primary);
+          border-color: var(--brand-color-primary);
+        }
+      }
+
+      & #line {
+        margin-bottom: 1.5rem;
+        width: 100%;
+      }
+
+      & ul {
+        & li {
+          margin-bottom: 1rem;
+
+          & span {
+            color: var(--text-color-secundary);
+          }
+        }
+      }
+
+      & p {
+        font-weight: 0.875rem;
       }
     }
   }
@@ -539,6 +777,62 @@ a {
             font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
             letter-spacing: 0.04em;
           }
+        }
+      }
+    }
+  }
+
+  /* configurar a seção pricing para celulares */
+  #pricing {
+    padding-block: 3rem;
+
+    & #header-pricing {
+      & p {
+        margin-bottom: 0.5rem;
+      }
+
+      & h2 {
+        font: var(--fw-bold) 1.5rem/1.2 var(--ff-sans);
+        letter-spacing: -4%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    & #table-pricing {
+      & #basic {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+
+        & h3 {
+          font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
+          letter-spacing: -4%;
+        }
+      }
+
+      & #premium {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+
+        & h6 {
+          display: block;
+        }
+
+        & h3 {
+          font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
+          letter-spacing: -4%;
+        }
+      }
+
+      & #family {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+
+        & h3 {
+          font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
+          letter-spacing: -4%;
         }
       }
     }
