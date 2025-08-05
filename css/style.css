@@ -633,6 +633,39 @@ a {
   }
 }
 
+/* section download */
+#download {
+  padding-block: 5rem;
+
+  & #main-download {
+    background-color: var(--surface-color);
+    border-radius: 1.5rem;
+    padding-inline: 5rem;
+
+    & #content-download {
+      & p:first-child {
+        font: var(--fw-md) 0.875rem/1 var(--ff-sans);
+        letter-spacing: 8%;
+        text-transform: uppercase;
+        color: var(--brand-color-primary);
+        margin-bottom: 0.5rem;
+      }
+
+      & h3 {
+        font: var(--fw-bold) 3rem/1.2 var(--ff-sans);
+        letter-spacing: -4%;
+        color: var(--text-color-primary);
+        margin-bottom: 0.5rem;
+      }
+
+      & p:nth-child(3) {
+        color: var(--text-color-secundary);
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
 /* media */
 @media (max-width: 576px) {
   .container-sml {
@@ -834,6 +867,35 @@ a {
           font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
           letter-spacing: -4%;
         }
+      }
+    }
+  }
+
+  /* configurar a seção download para celulares */
+  #download {
+    padding-block: 3rem;
+
+    & #main-download {
+      padding: 3rem 1.5rem;
+      width: 100%;
+
+      & #content-download {
+        & h3 {
+          font: var(--fw-bold) 1.5rem/1.2 var(--ff-sans);
+          letter-spacing: -4%;
+        }
+
+        & div:last-child {
+          width: 65%;
+
+          & img {
+            height: 3.5rem;
+          }
+        }
+      }
+
+      & #img-download {
+        display: none;
       }
     }
   }
