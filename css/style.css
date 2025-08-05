@@ -96,27 +96,27 @@ a {
   padding-block: 1.5rem;
   align-items: center;
 
-  & #logo {
+  #logo {
     margin-right: auto;
   }
 
-  & #menu {
+  #menu {
     display: flex;
     gap: 1.5rem;
     align-items: center;
 
-    & a:hover {
+    a:hover {
       color: var(--brand-color-primary);
     }
 
-    & button[type="button"] {
+    button[type="button"] {
       border-radius: 8px;
       padding: 0.75rem 1.5rem;
       background-color: var(--text-color-primary);
       color: var(--bg-color);
       cursor: pointer;
 
-      &:hover {
+      button:hover {
         background: var(--gradient);
       }
     }
@@ -129,53 +129,53 @@ a {
   padding-bottom: 15rem;
   background: url(../assets/bg-hero-desktop.svg) no-repeat bottom center/contain;
 
-  & main {
+  main {
     text-align: center;
     margin-bottom: 5.6rem;
 
-    & #content-hero {
+    #content-hero {
       margin-bottom: 3rem;
 
-      & img {
+      img {
         margin-inline: auto;
         margin-bottom: 1.5rem;
       }
 
-      & h1 {
+      h1 {
         font: var(--fw-bold) 4rem/1.2 var(--ff-sans);
       }
 
-      & p {
+      p {
         margin-top: 1rem;
         font: var(--fw-md) 2.5rem/1.4 var(--ff-sans);
         color: var(--text-color-secundary);
       }
     }
 
-    & #btn {
+    #btn {
       display: flex;
       justify-content: center;
       gap: 1rem;
 
-      & #primary-hero {
+      #primary-hero {
         padding: 1rem 2rem;
         border-radius: 8px;
         border: 1px solid var(--text-color-primary);
         cursor: pointer;
 
-        &:hover {
+        #primary-hero:hover {
           color: var(--brand-color-primary);
         }
       }
 
-      & #secundary-hero {
+      #secundary-hero {
         padding: 1rem 2rem;
         border-radius: 8px;
         background-color: var(--text-color-primary);
         color: var(--bg-color);
         cursor: pointer;
 
-        &:hover {
+        #secundary-hero:hover {
           background: var(--gradient);
         }
       }
@@ -190,24 +190,24 @@ a {
   align-items: center;
   background-color: var(--surface-color);
 
-  & #content-about {
+  #content-about {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 
-    & p#title {
+    p#title {
       color: var(--brand-color-primary);
       text-transform: uppercase;
       font: var(--fw-md) 0.875rem/1 var(--ff-sans);
       letter-spacing: 8%;
     }
 
-    & h1 {
+    h1 {
       font: var(--fw-bold) 3rem/1.4 var(--ff-sans);
       letter-spacing: -4%;
     }
 
-    & p {
+    p {
       font: 400 1rem/1.6 var(--ff-sans);
       color: var(--text-color-secundary);
     }
@@ -218,12 +218,12 @@ a {
 #features {
   padding-block: 5rem;
 
-  & #features-primary {
-    & div {
+  #features-primary {
+    div {
       height: 25rem;
     }
 
-    & #feature-1 {
+    #feature-1 {
       padding: 2.5rem 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--stroke-color);
@@ -231,23 +231,23 @@ a {
       width: 17.5rem;
       height: 25rem;
 
-      & img {
+      img {
         margin-bottom: 1rem;
       }
 
-      & h2 {
+      h2 {
         margin-bottom: 0.5rem;
         font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
         letter-spacing: -4%;
       }
 
-      & p {
+      p {
         font: 400 1rem/1.6 var(--ff-sans);
         color: var(--text-color-secundary);
       }
     }
 
-    & #feature-2 {
+    #feature-2 {
       padding: 2.5rem 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--stroke-color);
@@ -258,26 +258,26 @@ a {
       overflow: hidden;
       position: relative;
 
-      & div:first-child {
+      div:first-child {
         max-width: 17rem;
         height: auto;
 
-        & img {
+        img {
           margin-bottom: 1rem;
         }
 
-        & h2 {
+        h2 {
           margin-bottom: 0.5rem;
           font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
         }
 
-        & p {
+        p {
           font: 400 1rem/1.6 var(--ff-sans);
           color: var(--text-color-secundary);
         }
       }
 
-      & div:nth-child(2) {
+      div:nth-child(2) {
         height: auto;
         position: absolute;
         bottom: 2rem;
@@ -286,7 +286,7 @@ a {
       }
     }
 
-    & #feature-3 {
+    #feature-3 {
       padding: 2.5rem 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--stroke-color);
@@ -294,30 +294,30 @@ a {
       width: 17.5rem;
       height: 25rem;
 
-      & img {
+      img {
         margin-bottom: 1rem;
       }
 
-      & h2 {
+      h2 {
         margin-bottom: 0.5rem;
         font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
         letter-spacing: -4%;
       }
 
-      & p {
+      p {
         font: 400 1rem/1.6 var(--ff-sans);
         color: var(--text-color-secundary);
       }
     }
   }
 
-  & #features-secundary {
-    & div {
+  #features-secundary {
+    div {
       height: 25rem;
       width: 37rem;
     }
 
-    & #features-secundary-1 {
+    #features-secundary-1 {
       padding: 2.5rem 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--stroke-color);
@@ -326,36 +326,36 @@ a {
       overflow: hidden;
       position: relative;
 
-      & div:first-child {
+      div:first-child {
         position: absolute;
         bottom: 2rem;
         left: 2rem;
         max-width: 15rem;
       }
 
-      & div {
+      div {
         margin-left: auto;
         max-width: 17rem;
         height: auto;
 
-        & img {
+        img {
           margin-bottom: 1rem;
         }
 
-        & h2 {
+        h2 {
           margin-bottom: 0.5rem;
           font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
           letter-spacing: 0.04rem;
         }
 
-        & p {
+        p {
           font: 400 1rem/1.6 var(--ff-sans);
           color: var(--text-color-secundary);
         }
       }
     }
 
-    & #features-secundary-2 {
+    #features-secundary-2 {
       padding: 2.5rem 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--stroke-color);
@@ -364,27 +364,27 @@ a {
       overflow: hidden;
       position: relative;
 
-      & div:first-child {
+      div:first-child {
         max-width: 16rem;
         height: auto;
 
-        & img {
+        img {
           margin-bottom: 1rem;
         }
 
-        & h2 {
+        h2 {
           margin-bottom: 0.5rem;
           font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
           letter-spacing: 0.04rem;
         }
 
-        & p {
+        p {
           font: 400 1rem/1.6 var(--ff-sans);
           color: var(--text-color-secundary);
         }
       }
 
-      & div:last-child {
+      div:last-child {
         height: auto;
         position: absolute;
         top: 2rem;
@@ -399,8 +399,8 @@ a {
 #pricing {
   padding-block: 5rem;
 
-  & #header-pricing {
-    & p {
+  #header-pricing {
+    p {
       font: var(--fw-md) 0.875rem/1 var(--ff-sans);
       letter-spacing: 8%;
       color: var(--brand-color-primary);
@@ -408,7 +408,7 @@ a {
       margin-bottom: 0.5rem;
     }
 
-    & h2 {
+    h2 {
       font: var(--fw-bold) 3rem/1.2 var(--ff-sans);
       letter-spacing: -4%;
       color: var(--text-color-primary);
@@ -416,8 +416,8 @@ a {
     }
   }
 
-  & #table-pricing {
-    & #basic {
+  #table-pricing {
+    #basic {
       padding: 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--stroke-color);
@@ -425,27 +425,27 @@ a {
       max-width: 24rem;
       height: 30rem;
 
-      & h6 {
+      h6 {
         font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
         letter-spacing: -4%;
         color: var(--text-color-primary);
         margin-bottom: 4px;
       }
 
-      & p {
+      p {
         font: 400 1rem/1.6 var(--ff-sans);
         color: var(--text-color-secundary);
         margin-bottom: 1.5rem;
       }
 
-      & h3 {
+      h3 {
         font: var(--fw-bold) 2.5rem/1.2 var(--ff-sans);
         color: var(--text-color-primary);
         letter-spacing: -4%;
         margin-bottom: 1.5rem;
       }
 
-      & button {
+      button {
         padding: 0.75rem 1.5rem;
         border: 1px solid var(--text-color-primary);
         border-radius: 0.5rem;
@@ -454,29 +454,29 @@ a {
         width: 100%;
         margin-bottom: 2rem;
 
-        &:hover {
+        button:hover {
           color: var(--brand-color-primary);
           border-color: var(--brand-color-primary);
         }
       }
 
-      & #line {
+      #line {
         margin-bottom: 2rem;
         width: 100%;
       }
 
-      & ul {
-        & li {
+      ul {
+        li {
           margin-bottom: 1rem;
 
-          & span {
+          span {
             color: var(--text-color-secundary);
           }
         }
       }
     }
 
-    & #premium {
+    #premium {
       padding: 4.5rem 2rem 2rem 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--brand-color-primary);
@@ -485,7 +485,7 @@ a {
       height: 35rem;
       position: relative;
 
-      & div:first-child span {
+      div:first-child span {
         position: absolute;
         top: 0;
         left: 0;
@@ -497,32 +497,32 @@ a {
         border-bottom-right-radius: 1.5rem;
       }
 
-      & h6 {
+      h6 {
         font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
         letter-spacing: -4%;
         color: var(--text-color-primary);
         margin-bottom: 4px;
       }
 
-      & p {
+      p {
         font: 400 1rem/1.6 var(--ff-sans);
         color: var(--text-color-secundary);
         margin-bottom: 1.5rem;
       }
 
-      & h3 {
+      h3 {
         font: var(--fw-bold) 2.5rem/1.2 var(--ff-sans);
         color: var(--text-color-primary);
         letter-spacing: -4%;
         margin-bottom: 1.5rem;
 
-        & span {
+        span {
           color: var(--text-color-secundary);
           font: 400 1rem/1.6 var(--ff-sans);
         }
       }
 
-      & button {
+      button {
         padding: 0.75rem 1.5rem;
         background-color: var(--text-color-primary);
         border-radius: 0.5rem;
@@ -530,28 +530,28 @@ a {
         width: 100%;
         margin-bottom: 2rem;
 
-        &:hover {
+        button:hover {
           background-color: var(--brand-color-primary);
         }
       }
 
-      & #line {
+      #line {
         margin-bottom: 2rem;
         width: 100%;
       }
 
-      & ul {
-        & li {
+      ul {
+        li {
           margin-bottom: 1rem;
 
-          & span {
+          span {
             color: var(--text-color-secundary);
           }
         }
       }
     }
 
-    & #family {
+    #family {
       padding: 2rem;
       background-color: var(--surface-color);
       border: 1px solid var(--stroke-color);
@@ -559,32 +559,32 @@ a {
       max-width: 24rem;
       height: 30rem;
 
-      & h6 {
+      h6 {
         font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
         color: var(--text-color-primary);
         letter-spacing: -4%;
         margin-bottom: 4px;
       }
 
-      & p {
+      p {
         font: 400 1rem/1.6 var(--ff-sans);
         color: var(--text-color-secundary);
         margin-bottom: 1.5rem;
       }
 
-      & h3 {
+      h3 {
         font: var(--fw-bold) 2.5rem/1.2 var(--ff-sans);
         color: var(--text-color-primary);
         letter-spacing: -4%;
         margin-bottom: 1.5rem;
 
-        & span {
+        span {
           font: 400 1rem/1.6 var(--ff-sans);
           color: var(--text-color-secundary);
         }
       }
 
-      & button {
+      button {
         padding: 0.75rem 1.5rem;
         border: 1px solid var(--text-color-primary);
         border-radius: 0.5rem;
@@ -592,28 +592,28 @@ a {
         width: 100%;
         margin-bottom: 1.5rem;
 
-        &:hover {
+        button:hover {
           color: var(--brand-color-primary);
           border-color: var(--brand-color-primary);
         }
       }
 
-      & #line {
+      #line {
         margin-bottom: 1.5rem;
         width: 100%;
       }
 
-      & ul {
-        & li {
+      ul {
+        li {
           margin-bottom: 1rem;
 
-          & span {
+          span {
             color: var(--text-color-secundary);
           }
         }
       }
 
-      & p {
+      p {
         font-weight: 0.875rem;
       }
     }
@@ -624,13 +624,13 @@ a {
 #download {
   padding-block: 5rem;
 
-  & #main-download {
+  #main-download {
     background-color: var(--surface-color);
     border-radius: 1.5rem;
     padding-inline: 5rem;
 
-    & #content-download {
-      & p:first-child {
+    #content-download {
+      p:first-child {
         font: var(--fw-md) 0.875rem/1 var(--ff-sans);
         letter-spacing: 8%;
         text-transform: uppercase;
@@ -638,14 +638,14 @@ a {
         margin-bottom: 0.5rem;
       }
 
-      & h3 {
+      h3 {
         font: var(--fw-bold) 3rem/1.2 var(--ff-sans);
         letter-spacing: -4%;
         color: var(--text-color-primary);
         margin-bottom: 0.5rem;
       }
 
-      & p:nth-child(3) {
+      p:nth-child(3) {
         color: var(--text-color-secundary);
         margin-bottom: 2.5rem;
       }
@@ -655,29 +655,29 @@ a {
 
 /* footer */
 footer {
-  & #footer-primary {
+  #footer-primary {
     padding-block: 5rem;
-    & div:last-child {
-      & ul {
-        & li:first-child {
+    div:last-child {
+      ul {
+        li:first-child {
           font: var(--fw-md) 0.75rem/1 var(--ff-sans);
           color: var(--brand-color-primary);
           letter-spacing: 8%;
           text-transform: uppercase;
         }
 
-        & li {
+        li {
           color: var(--text-color-secundary);
         }
       }
     }
   }
 
-  & #footer-secundary {
+  #footer-secundary {
     margin-bottom: 2rem;
 
-    & div:last-child {
-      & p {
+    div:last-child {
+      p {
         color: var(--text-color-secundary);
       }
     }
@@ -708,29 +708,29 @@ footer {
   #hero {
     padding-top: 4rem;
 
-    & main #content-hero {
-      & img {
+    main #content-hero {
+      img {
         width: 12.8rem;
         height: 3.25rem;
         margin-bottom: 1rem;
       }
 
-      & h1 {
+      h1 {
         margin-bottom: 0.5rem;
         font: var(--fw-bold) 2.5rem/1.2 var(--ff-sans);
         letter-spacing: -4px;
       }
 
-      & p {
+      p {
         font: var(--fw-md) 1.25rem/ 1.4 var(--ff-sans);
       }
     }
 
-    & #btn {
+    #btn {
       display: flex;
       gap: 1rem;
 
-      & button {
+      button {
         padding: 0.75rem 1.5rem;
       }
     }
@@ -740,17 +740,17 @@ footer {
   #about {
     height: 37rem;
 
-    & #img-about {
+    #img-about {
       position: relative;
       top: -15rem;
       padding-inline: 1.5rem;
     }
 
-    & #content-about {
+    #content-about {
       margin-top: -14rem;
       padding-bottom: 3rem;
 
-      & h1 {
+      h1 {
         font: var(--fw-bold) 1.5rem/1.2 var(--ff-sans);
         letter-spacing: -4%;
       }
@@ -763,68 +763,68 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
 
-    & #features-primary {
+    #features-primary {
       gap: 1.5rem;
 
-      & #feature-1 {
+      #feature-1 {
         width: 100%;
         height: auto;
         padding: 1.5rem;
 
-        & h2 {
+        h2 {
           font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
           letter-spacing: -4%;
         }
       }
 
-      & #feature-2 {
+      #feature-2 {
         width: 100%;
         height: auto;
         padding: 1.5rem;
         /* terminar a configuração do h2 */
-        & div:first-child {
-          & h2 {
+        div:first-child {
+          h2 {
             font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
             letter-spacing: -0.04em;
           }
         }
       }
 
-      & #feature-3 {
+      #feature-3 {
         width: 100%;
         height: auto;
         padding: 1.5rem;
 
-        & h2 {
+        h2 {
           font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
           letter-spacing: -4%;
         }
       }
     }
 
-    & #features-secundary {
+    #features-secundary {
       gap: 1.5rem;
 
-      & #features-secundary-1 {
+      #features-secundary-1 {
         width: 100%;
         height: auto;
         padding: 1.5rem;
 
-        & div {
-          & h2 {
+        div {
+          h2 {
             font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
             letter-spacing: 0.04em;
           }
         }
       }
 
-      & #features-secundary-2 {
+      #features-secundary-2 {
         width: 100%;
         height: auto;
         padding: 1.5rem;
 
-        & div:first-child {
-          & h2 {
+        div:first-child {
+          h2 {
             font: var(--fw-bold) 1.25rem/1.2 var(--ff-sans);
             letter-spacing: 0.04em;
           }
@@ -837,51 +837,51 @@ footer {
   #pricing {
     padding-block: 3rem;
 
-    & #header-pricing {
-      & p {
+    #header-pricing {
+      p {
         margin-bottom: 0.5rem;
       }
 
-      & h2 {
+      h2 {
         font: var(--fw-bold) 1.5rem/1.2 var(--ff-sans);
         letter-spacing: -4%;
         margin-bottom: 2rem;
       }
     }
 
-    & #table-pricing {
-      & #basic {
+    #table-pricing {
+      #basic {
         width: 100%;
         height: auto;
         padding: 1.5rem;
 
-        & h3 {
+        h3 {
           font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
           letter-spacing: -4%;
         }
       }
 
-      & #premium {
+      #premium {
         width: 100%;
         height: auto;
         padding: 1.5rem;
 
-        & h6 {
+        h6 {
           display: block;
         }
 
-        & h3 {
+        h3 {
           font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
           letter-spacing: -4%;
         }
       }
 
-      & #family {
+      #family {
         width: 100%;
         height: auto;
         padding: 1.5rem;
 
-        & h3 {
+        h3 {
           font: var(--fw-bold) 2rem/1.2 var(--ff-sans);
           letter-spacing: -4%;
         }
@@ -893,26 +893,26 @@ footer {
   #download {
     padding-block: 3rem;
 
-    & #main-download {
+    #main-download {
       padding: 3rem 1.5rem;
       width: 100%;
 
-      & #content-download {
-        & h3 {
+      #content-download {
+        h3 {
           font: var(--fw-bold) 1.5rem/1.2 var(--ff-sans);
           letter-spacing: -4%;
         }
 
-        & div:last-child {
+        div:last-child {
           width: 65%;
 
-          & img {
+          img {
             height: 3.5rem;
           }
         }
       }
 
-      & #img-download {
+      #img-download {
         display: none;
       }
     }
@@ -922,18 +922,18 @@ footer {
   footer {
     padding: 3rem 3rem 1.5rem 3rem;
 
-    & #footer-primary {
-      & #logo-footer {
+    #footer-primary {
+      #logo-footer {
         margin-bottom: 3rem;
       }
     }
 
-    & #footer-secundary {
-      & div:first-child {
+    #footer-secundary {
+      div:first-child {
         margin-bottom: 1.5rem;
       }
 
-      & div:last-child {
+      div:last-child {
         color: var(--text-color-secundary);
       }
     }
