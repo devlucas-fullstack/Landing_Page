@@ -89,13 +89,11 @@ a {
   max-width: 1280px;
   padding-inline: 2rem;
   margin-inline: auto;
-  border: 1px solid pink;
 }
 
 /* navbar */
 #navbar {
   padding-block: 1.5rem;
-  border: 1px solid red;
   align-items: center;
 
   & #logo {
@@ -107,7 +105,7 @@ a {
     gap: 1.5rem;
     align-items: center;
 
-    a:hover {
+    & a:hover {
       color: var(--brand-color-primary);
     }
 
@@ -127,7 +125,6 @@ a {
 
 /* section hero */
 #hero {
-  border: 1px solid green;
   padding-top: 5rem;
   padding-bottom: 15rem;
   background: url(../assets/bg-hero-desktop.svg) no-repeat bottom center/contain;
@@ -188,7 +185,6 @@ a {
 
 /* section about */
 #about {
-  border: 1px solid blue;
   padding-block: 5rem;
   gap: 2rem;
   align-items: center;
@@ -224,7 +220,6 @@ a {
 
   & #features-primary {
     & div {
-      border: 1px solid white;
       height: 25rem;
     }
 
@@ -336,10 +331,6 @@ a {
         bottom: 2rem;
         left: 2rem;
         max-width: 15rem;
-
-        & #img-features-secundary-1 {
-          border: 1px solid white;
-        }
       }
 
       & div {
@@ -399,10 +390,6 @@ a {
         top: 2rem;
         right: 2rem;
         max-width: 15rem;
-
-        & #img-features-secundary-2 {
-          border: 1px solid white;
-        }
       }
     }
   }
